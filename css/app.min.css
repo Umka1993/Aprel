@@ -629,7 +629,7 @@ html {
 }
 .gallery .swiper-button-prev::after {
   content: '';
-  background: url(../images/src/ArrowPrev.svg) no-repeat center;
+  background: url(../images/dest/ArrowPrev.svg) no-repeat center;
   position: absolute;
   width: 40px;
   height: 30px;
@@ -641,7 +641,7 @@ html {
 }
 .gallery .swiper-button-next::after {
   content: '';
-  background: url(../images/src/ArrowNext.svg) no-repeat center;
+  background: url(../images/dest/ArrowNext.svg) no-repeat center;
   position: absolute;
   width: 40px;
   height: 30px;
