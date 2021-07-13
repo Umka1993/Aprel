@@ -533,10 +533,7 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between
+  flex-direction: column
 }
 .block__img {
   border-radius: 20px
@@ -547,7 +544,8 @@ html {
   font-weight: 600;
   font-size: 30px;
   line-height: 37px;
-  color: #4c7448
+  color: #4c7448;
+  margin-bottom: 5px
 }
 .block__text {
   font-style: normal;
@@ -719,6 +717,9 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row
+}
+.footer__logo {
+  margin-bottom: 26px
 }
 .footer__text {
   font-family: Montserrat;

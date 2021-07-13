@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="./js/jquery-3.4.0.min.js"></script>
+
     <title>Aprel</title>
 
 
@@ -74,9 +78,9 @@
             <div class="container">
                 <div class="main__wrapper">
                     <div class="main__text">
-                        <h1 class="main__tittle">Реклама <br> без границ</h1>
+                        <h1 class="main__tittle wow animate__fadeInDown">Реклама <br> без границ</h1>
                         <!-- /.main__tittle -->
-                        <p class="main__subtittle">
+                        <p class="main__subtittle wow animate__fadeInDown">
                             реклама на любой вкус
                         </p>
                         <!-- /.main__subtittle -->
@@ -145,7 +149,7 @@
         <section class="servis" id="service">
             <div class="container">
                 <div class="servis__wrapp">
-                    <h2 class="servis__tittle">Услуги</h2>
+                    <h2 class="servis__tittle wow animate__fadeInDown animated">Услуги</h2>
                     <div class="servis__block block">
                         <div class="block__col">
                             <div class="block__img">
@@ -155,7 +159,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Наружняя реклама</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated ">Наружняя реклама</h3>
                             <!-- /.block__tittle -->
 
                             <div class="block__text">
@@ -188,7 +192,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Знаки и таблички</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated">Знаки и таблички</h3>
                             <!-- /.block__tittle -->
                             <div class="block__text">
                                 <ul>
@@ -217,7 +221,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Полиграфические услуги</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated">Полиграфические услуги</h3>
                             <!-- /.block__tittle -->
                             <div class="block__text">
                                 <p>Полиграфия, это всегда удобно, надежно, качественно и просто. Использование разнообразных технологий позволяет создать уникальную рекламу, которая способствует распространению информации о товаре, фирме, продукции. Разнообразие
@@ -243,7 +247,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Продвижение в интернете</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated">Продвижение в интернете</h3>
                             <!-- /.block__tittle -->
                             <div class="block__text">
                                 <ul>
@@ -273,7 +277,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Программирование</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated">Программирование</h3>
                             <!-- /.block__tittle -->
                             <div class="block__text">
                                 <ul>
@@ -303,7 +307,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__col">
-                            <h3 class="block__tittle">Сувениры</h3>
+                            <h3 class="block__tittle wow animate__fadeInLeft animated">Сувениры</h3>
                             <!-- /.block__tittle -->
                             <div class="block__text">
                                 <p>Разнообразные бытовые и офисные мелочи на которые можно нанести логотип вашей компании, это позволит создать солидный имидж вашей компании и порадовать ваших клиентов. Сувенирная продукция используется в качестве подарков
@@ -315,7 +319,7 @@
                         </div>
                         <!-- /.block__col -->
                         <div class="block__btn">
-                            <button>
+                            <button class="wow animate__pulse animated">
                                 
                             </button>
                         </div>
@@ -332,7 +336,7 @@
         <section class="gallery" id='gallery'>
             <div class="container">
                 <div class="gallery__wrapp">
-                    <h2 class="gallery__tittle">Галерея</h2>
+                    <h2 class="gallery__tittle wow animate__fadeInDown animated">Галерея</h2>
                     <!-- /.gallery__tittle -->
                     <div class="gallery__slider swiper-container">
                         <!-- Additional required wrapper -->
@@ -528,7 +532,11 @@
     </footer>
     <!-- /.footer -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="./js/jquery-3.4.0.min.js"></script> -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
     <script src="./js/app.js"></script>
 
 </body>
