@@ -415,6 +415,21 @@ html {
   line-height: 59px;
   color: #f4f4f4
 }
+.main__src {
+  margin-top: 35px;
+  padding: 25px 46px;
+  background: -o-linear-gradient(8.64deg,#eb8a45 -11.3%,#f9dc25 131.99%);
+  background: linear-gradient(81.36deg,#eb8a45 -11.3%,#f9dc25 131.99%);
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  font-family: Gilroy-Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 99.7%;
+  display: inline-block
+}
 .about {
   padding-top: 75px;
   padding-bottom: 105px
@@ -733,6 +748,7 @@ html {
   width: 20px
 }
 .footer__contact {
+  padding: 0;
   padding-top: 41px
 }
 .footer__number {
@@ -747,19 +763,18 @@ html {
   color: #fff
 }
 .footer__number a {
-  min-width: 45%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  margin-left: 20px;
+  margin-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px
+  margin-right: 7px
 }
 @media (min-width:992px) and (max-width:1199px) {
   .about .col__tittle {
@@ -824,16 +839,30 @@ html {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    max-width: 90%
+  }
+  .footer__contact {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
   .footer__text {
     font-size: 19px
   }
   .footer__number a {
-    min-width: 45%
+    min-width: 0
   }
 }
 @media (max-width:767px) {
+  .header {
+    padding-bottom: 50px;
+    position: relative
+  }
   .header__nav {
     position: fixed;
     top: 0;
@@ -908,17 +937,21 @@ html {
     top: 35px
   }
   .header__phones {
-    display: none
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%
   }
   .header__phones ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
   }
   .header__phones ul li {
     margin: 0;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-left: 20px
   }
   .about {
     padding: 75px 30px
@@ -1070,13 +1103,37 @@ html {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    max-width: 100%
+  }
+  .footer__col ul li a {
+    margin-bottom: 5px
   }
   .footer__text {
     font-size: 19px
   }
+  .footer__number p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 100%;
+    margin-top: 5px
+  }
+  .footer__number p:nth-child(1) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+  }
+  .footer__number p span {
+    display: none
+  }
   .footer__number a {
-    min-width: 50%
+    min-width: 42%
   }
 }
 @media (max-width:575px) {
@@ -1132,10 +1189,6 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding: 121px 50px;
     text-align: center
   }
@@ -1154,17 +1207,21 @@ html {
     top: 35px
   }
   .header__phones {
-    display: none
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%
   }
   .header__phones ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto
   }
   .header__phones ul li {
     margin: 0;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-left: 20px
   }
   .main {
     padding-top: 111px;
@@ -1178,6 +1235,18 @@ html {
   .main__subtittle {
     font-size: 24px;
     text-align: center
+  }
+  .main__src {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 70%;
+    font-size: 18px
   }
   .about {
     padding: 75px 30px
@@ -1328,6 +1397,9 @@ html {
     order: -1;
     margin-bottom: 20px
   }
+  .footer__col ul li a {
+    margin-bottom: 5px
+  }
   .footer__text {
     font-size: 19px
   }
@@ -1336,8 +1408,11 @@ html {
   .header__burger {
     left: 85%
   }
-  .header__phones {
-    display: none
+  .main__src {
+    font-size: 18px
+  }
+  .footer__col ul li a {
+    margin-bottom: 5px
   }
 }
 @media (min-width:318px) and (max-width:375px) {
@@ -1393,10 +1468,6 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding: 121px 50px;
     text-align: center
   }
@@ -1406,7 +1477,7 @@ html {
   }
   .header__menu .open ul li a {
     color: #fff;
-    font-size: 35px
+    font-size: 25px
   }
   .header__burger {
     opacity: 1;
@@ -1414,18 +1485,11 @@ html {
     top: 15px;
     top: 35px
   }
-  .header__phones {
-    display: none
-  }
   .header__phones ul {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-  }
-  .header__phones ul li {
-    margin: 0;
-    margin-bottom: 10px
+    -ms-flex-direction: row;
+    flex-direction: row
   }
   .main {
     padding-top: 111px;
@@ -1439,6 +1503,9 @@ html {
   .main__subtittle {
     font-size: 24px;
     text-align: center
+  }
+  .main__src {
+    font-size: 15px
   }
   .about {
     padding: 75px 30px
@@ -1603,7 +1670,7 @@ html {
     width: 100%
   }
   .footer__col ul li a {
-    margin-bottom: 15px
+    margin-bottom: 5px
   }
   .footer__col ul li a p {
     min-width: 90%
