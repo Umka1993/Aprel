@@ -803,7 +803,7 @@ html {
     display: none
   }
   .footer {
-    background: url(../images/src/footerBG.png) no-repeat right bottom,#eb8a45;
+    background: url(../images/dest/footerBG.png) no-repeat right bottom,#eb8a45;
     padding-top: 23px;
     padding-bottom: 38px;
     background-size: 96px 37%
@@ -1067,7 +1067,7 @@ html {
     display: none
   }
   .footer {
-    background: url(../images/src/footerBG.png) no-repeat right bottom,#eb8a45;
+    background: url(../images/dest/footerBG.png) no-repeat right bottom,#eb8a45;
     padding-top: 23px;
     padding-bottom: 38px;
     background-size: 96px 37%
@@ -1359,7 +1359,7 @@ html {
     display: none
   }
   .footer {
-    background: url(../images/src/footerBG.png) no-repeat right bottom,#eb8a45;
+    background: url(../images/dest/footerBG.png) no-repeat right bottom,#eb8a45;
     padding-top: 23px;
     padding-bottom: 38px;
     background-size: 96px 37%
@@ -1625,7 +1625,7 @@ html {
     display: none
   }
   .footer {
-    background: url(../images/src/footerBG.png) no-repeat right bottom,#eb8a45;
+    background: url(../images/dest/footerBG.png) no-repeat right bottom,#eb8a45;
     padding-top: 23px;
     padding-bottom: 38px;
     background-size: 96px 37%
