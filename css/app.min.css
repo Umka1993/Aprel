@@ -428,7 +428,11 @@ html {
   font-weight: 600;
   font-size: 24px;
   line-height: 99.7%;
-  display: inline-block
+  display: inline-block;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2
 }
 .about {
   padding-top: 75px;
