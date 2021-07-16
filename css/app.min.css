@@ -662,7 +662,7 @@ html {
   right: 0
 }
 .footer {
-  background: url(../images/src/footerBG.png) no-repeat center bottom,#eb8a45;
+  background: url(../images/dest/footerBG.png) no-repeat center bottom,#eb8a45;
   padding-top: 23px;
   padding-bottom: 38px;
   background-size: 215px 90%
