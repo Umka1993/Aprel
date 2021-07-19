@@ -432,7 +432,8 @@ html {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2
+  animation-iteration-count: 2;
+  text-align: center
 }
 .about {
   padding-top: 75px;
@@ -609,14 +610,26 @@ html {
   position: relative
 }
 .gallery__img {
-  cursor: -webkit-grab;
-  cursor: grab;
-  text-align: center
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 370px;
+  height: 360px
 }
 .gallery__img img {
-  width: 360px;
-  height: 360px;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   padding-bottom: 50px
+}
+.gallery .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .gallery .swiper-container {
   padding-bottom: 0
