@@ -622,9 +622,8 @@ html {
   justify-content: center
 }
 .gallery__img img {
-  display: block;
   max-width: 100%;
-  padding-bottom: 50px
+  padding-bottom: 30px
 }
 .gallery .swiper-wrapper {
   display: -webkit-box;
@@ -652,7 +651,7 @@ html {
 .gallery .swiper-button-prev {
   position: absolute;
   top: 93%;
-  z-index: 10000
+  z-index: 100
 }
 .gallery .swiper-button-prev {
   cursor: pointer
