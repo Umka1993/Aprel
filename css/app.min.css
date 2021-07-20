@@ -617,13 +617,13 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 370px;
-  height: 360px
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .gallery__img img {
+  display: block;
   max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   padding-bottom: 50px
 }
 .gallery .swiper-wrapper {
@@ -632,7 +632,7 @@ html {
   display: flex
 }
 .gallery .swiper-container {
-  padding-bottom: 0
+  padding-bottom: 25px
 }
 .gallery .swiper-pagination {
   bottom: 10px
@@ -652,7 +652,7 @@ html {
 .gallery .swiper-button-prev {
   position: absolute;
   top: 93%;
-  z-index: 100
+  z-index: 10000
 }
 .gallery .swiper-button-prev {
   cursor: pointer
